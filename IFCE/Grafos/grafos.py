@@ -5,7 +5,7 @@ import itertools
 import random
 
 
-def generate_random_connected_graph(size: int, probability: float, **kwargs):
+def generate_random_connected_graph(size: int, probability: float, connected = True, **kwargs):
     """Gera um grafo conexo aleatório. O algoritmo é simples:
     ele gera um grafo com arestas aleatórias, com probabilidade
     {probability} de uma aresta existir entre dois vértices quaisquer,
@@ -23,7 +23,7 @@ def generate_random_connected_graph(size: int, probability: float, **kwargs):
                 weight = random.randint(0, 10)
                 g.add_edge(node_1, node_2, weight=weight)
                 
-        if nx.is_connected(g):
+        if nx.is_connected(g) or not connected:
             return g
 
 

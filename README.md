@@ -1,2 +1,4 @@
 # Course-Activities
-Repository to store learning material from courses i've participated in.
+
+Repository to store learning material from courses i've participated in, including
+university courses.

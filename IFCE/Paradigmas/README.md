@@ -1,1 +1,0 @@
-cadeira paradigmas da programação
